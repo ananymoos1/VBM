@@ -8,6 +8,6 @@ This is for individuals who wish to experience Linux on their system, without in
 neofetch - displays information about the system
 help - displays a help message
 clear - clears the console
-print textgoeshere- prints the desired text
+print textgoeshere - prints the desired text
 exit - exits the program
 ```
