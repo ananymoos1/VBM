@@ -39,8 +39,9 @@ def process_command(command):
         print(final_output)
     elif command == "clear":
         os.system('cls' if os.name == 'nt' else 'clear')
-    elif command == "execute WintypePRO-executor.roblox":
-        print("Successfully opened WintypePRO Executor")
+    elif command.startswith("print "):
+        text = command[6:]
+        print(text)
     elif command == "exit":
         return False
     elif command == "help":
@@ -48,6 +49,7 @@ def process_command(command):
               "neofetch - Show system information\n"
               "clear - Clear the screen\n"
               "exit - Exit the program\n"
+              "print textgoeshere - print the desired text\n"
               "help - Show this help message")
     else:
         print(f"Command '{command}' not recognized.")
